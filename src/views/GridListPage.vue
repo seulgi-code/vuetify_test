@@ -3,7 +3,7 @@
     <v-row>
       <v-col cols="6" sm="3">
         <v-card class="pa-3">
-          테스트중입니당.npm
+          git commit을 master에 합치고 싶어용
         </v-card>
       </v-col>
       <v-col cols="6" sm="3">
