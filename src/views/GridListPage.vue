@@ -3,7 +3,7 @@
     <v-row>
       <v-col cols="6" sm="3">
         <v-card class="pa-3">
-          슬기짱
+          테스트중입니당.npm
         </v-card>
       </v-col>
       <v-col cols="6" sm="3">
