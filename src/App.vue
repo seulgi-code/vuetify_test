@@ -17,7 +17,7 @@
         app
         :src="require('@/assets/navi.jpeg')"
       >
-        <template v-slot:img="props">
+        <template #img="props">
           <v-img
             :gradient="gradient"
             v-bind="props"
@@ -88,7 +88,8 @@ export default {
       { title: 'Forms', icon: 'mdi-image', to: '/forms' },
       { title: 'Tables', icon: 'mdi-image', to: '/tables' },
       { title: 'Icons', icon: 'mdi-image', to: '/icons' },
-
+      { title: 'Home', icon: 'mdi-image', to: '/home' },
+      { title: 'Directive', icon: 'mdi-image', to: '/directive' },
     ],
     right: null,
   }),

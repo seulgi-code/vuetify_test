@@ -9,6 +9,8 @@ import Tables from '@/views/Tables'
 import Forms from '@/views/Forms'
 import Buttons from '@/views/Buttons'
 import Icons from '@/views/Icons'
+import Home from '@/views/Home'
+import Directive from '@/views/Directive'
 
 Vue.use(VueRouter);
 
@@ -57,6 +59,16 @@ const routes = [
     path: '/icons',
     name: 'Icons',
     component: Icons
+  },
+  {
+    path: '/home',
+    name: 'Home',
+    component: Home
+  },
+  {
+    path: '/directive',
+    name: 'Directive',
+    component: Directive
   },
 ]
 
