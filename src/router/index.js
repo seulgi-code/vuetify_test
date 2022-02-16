@@ -10,9 +10,19 @@ import Forms from '@/views/Forms'
 import Buttons from '@/views/Buttons'
 import Icons from '@/views/Icons'
 import Home from '@/views/Home'
-import Directive from '@/views/Directive'
-
 Vue.use(VueRouter);
+
+//font-awesome
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faShareNodes } from '@fortawesome/free-solid-svg-icons'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+library.add(faShareNodes, faStar)
+
+Vue.component('FontAwesomeIcon', FontAwesomeIcon)
+
+Vue.config.productionTip = false
 
 const routes = [
   {
@@ -64,11 +74,6 @@ const routes = [
     path: '/home',
     name: 'Home',
     component: Home
-  },
-  {
-    path: '/directive',
-    name: 'Directive',
-    component: Directive
   },
 ]
 

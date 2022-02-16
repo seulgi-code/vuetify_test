@@ -1,3 +1,22 @@
+<style>
+.icon_box{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+.icon_login{
+  margin: 0 9px;
+}
+.v-toolbar__content, .v-toolbar__extension{
+  padding: 0 !important;
+}
+.logo_title{
+  width: 100%;
+  position: absolute;
+  text-align: center;
+}
+</style>
+
 <template>
   <v-app>
     <v-app-bar
@@ -5,9 +24,18 @@
       color="primary"
       dark
     >
+      <h2 class="logo_title">
+        굿즈 컴퍼니
+      </h2>
       <v-app-bar-nav-icon @click="drawer = !drawer" />
-
-      <v-spacer />
+      <div class="icon_box">
+        <h2>
+          <font-awesome-icon icon="share-nodes" />
+        </h2>
+        <h2 class="icon_login">
+          <font-awesome-icon icon="star" />
+        </h2>
+      </div>
     </v-app-bar>
 
     <template>
@@ -89,7 +117,6 @@ export default {
       { title: 'Tables', icon: 'mdi-image', to: '/tables' },
       { title: 'Icons', icon: 'mdi-image', to: '/icons' },
       { title: 'Home', icon: 'mdi-image', to: '/home' },
-      { title: 'Directive', icon: 'mdi-image', to: '/directive' },
     ],
     right: null,
   }),
